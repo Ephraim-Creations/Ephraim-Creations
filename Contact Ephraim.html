@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Other head elements like title and link to CSS it (links to social accounts) -->
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT | Ephraims Portfolio</title>
+
+			
+            <style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8d9d9;
+        }
+
+        
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 10px 20px;
+        }
+         
+        .logo-img{
+         width:300px;
+         height: fit-content;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Hamburger Menu Styles */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        .menu-icon div {
+            width: 30px;
+            height: 4px;
+            background-color: white;
+            margin: 5px 0;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 75px;
+                right: 20px;
+                width:max-content;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            }
+
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        }
+#about{
+    background-color: #7fffd4;
+width: fill;
+height: fit-content;
+box-shadow: 0 4px 10px #0315298e;
+padding: 20px;
+}
+
+  #contact {
+    max-width: 800px; /* Max width of the form */
+    margin: 20px auto; /* Center the form on the page */
+    padding: 20px; /* Padding inside the form */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+
+}
+
+#contact:hover {
+    transform:translateY(7px); /* Lift the box on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* Add shadow on hover */
+}
+
+
+.form-group {
+    margin-bottom: 15px; /* Space between fields */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+
+}
+input{
+    width: 95%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+
+}
+input:hover{
+    transform:translateY(7px); /* Lift the box on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* Add shadow on hover */
+}
+
+input[type="email"],
+textarea {
+    width: 95%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+
+}
+
+textarea:hover{
+    transform:translateY(7px); /* Lift the box on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* Add shadow on hover */
+}
+
+
+.form-actions {
+    display: flex; /* Flexbox for button layout */
+    justify-content: space-between; /* Space between buttons */
+}
+
+button {
+    padding: 10px 20px; /* Padding for buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #027205; /* Green background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer on hover */
+}
+button:hover{
+    background-color: #06b61aea;
+}
+
+
+button[type="reset"] {
+    background-color: #f44336; /* Red background for reset */
+}
+button[type="reset"]:hover{
+    background-color: #b30707;
+}
+
+
+
+/*FOOTER STYLE*/
+.footer {
+    background-color:#333;
+    color: rgb(255, 255, 255); /* White text */
+    text-align: center; /* Centered text */
+    padding: 2px; /* Padding for footer */
+    position: relative; /* Ensure footer stays at the bottom */
+	height:100%;
+}
+
+.footer-links {
+    margin-bottom: 10px; /* Space below the links */
+}
+
+.footer-links a {
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 15px; /* Space between links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+.footer-links a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+#contact-info {
+    text-align: center; /* Center text */
+    margin: 40px 0; /* Space above and below */
+	color:#fff;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  color: #007BFF;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+    color: #fff; /* Change color on hover */
+}
+
+.contact-details p {
+    font-size: 1.2em; /* Font size for email and phone */
+    color: #fff; /* Darker color for text */
+}
+
+.contact-details a {font-size: 1.1em;
+color: #7beed3;}
+
+.contact-details a:hover{ color:#007BFF;
+text-decoration: none;}
+
+
+
+</style>
+			
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const menuIcon = document.querySelector(".menu-icon");
+        const navLinks = document.querySelector("nav ul");
+
+        menuIcon.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    });
+</script>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div><img src="port logo.jpg" class="logo-img"></div><!--logo division-->
+        <ul>
+            <li><a href="Hp.html">Home</a></li>
+            <li><a href="About Ephraim.html">About</a></li>
+            <li><a href="serviices.html">Services</a></li>
+            <li><a href="portfolio projects.html">Portfolio</a></li>
+            <li><a href="Contact Ephraim.html">Contact</a></li>
+            <li><a href="https://www.ephraimcreations.online/" target="_blank">Visit Ephraim Creations</a></li>
+        </ul>
+        <div class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</header>
+<main>
+      <center><section id="about">
+	 <h3>Contact Me for Your Website Design Needs!</h3>
+         <p>Are you looking to create a stunning and functional website that stands out?<br>
+         As a passionate website designer, I specialize in crafting tailored websites <br>
+        that meet your unique requirements and help your business thrive online. Whether <br>
+        you need a brand new site, a redesign, or enhancements to your existing website, <br>
+        I’m here to help! Let’s turn your vision into reality! Feel free to reach out for<br>
+         a consultation or to discuss your project ideas. I look forward to working with you!</p>
+	  </section></center>
+	  
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" action="mailto:mutwiriephraim3@gmail.com" method="post" enctype="text/plain">
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Your message here. You can start with your number"></textarea>
+        </div>
+        <div class="form-actions">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</section>
+ <script src="contact Ephraim.js"></script>
+
+
+  <!--FOOTER SECTION-->
+  <footer class="footer">
+    <h3>Quick links</h3>
+    <div class="footer-links">
+        <a href="About Ephraim.html">About</a>
+        <a href="serviices.html">services</a>
+        <a href="Contact Ephraim.html">Contact</a>
+        <a href="portfolio projects.html">Portfolio</a>
+    </div>
+			<section id="contact-info">
+    <h2>On socials</h2>
+            <!-- Social Media Links with Icons -->
+                <div class="social-media">
+                    <a href="https://www.facebook.com/ephraimmutwiri2024"  target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/ephraim_mutwiri?igsh=YzljYTk1ODg3Zg==" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/ephraim-mutwiri-052a58310" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://youtube.com/@ephraimcreations01?si=3TZvja8EmGrbCQKV" target="_blank" class="fa fa-youtube"></a>
+            </div>
+        
+
+        <!--contact details-->
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or project inquiries.</p>
+    <div class="contact-details">
+        <p>Email: <a href="mailto:mutwiriephraim3@gmail.com">mutwiriephraim3@gmail.com</a></p>
+        <p>Phone: <a href="tel:+254112268873">+254112268873</a></p>
+    </div>	
+    </section>
+
+        <div class="copyright">
+            &copy; 2024-2025 Ephraim Mutwiri. All rights reserved.
+        </div>
+        <br>
+    </footer>
+	<script>
+	document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form from submitting normally
+
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    // Create a mailto link
+    const mailtoLink = `mailto:mailto:mutwiriephraim3@gmail.com?subject=Contact Form Submission&body=Email: ${email}%0A%0AMessage: ${message}`;
+
+    // Redirect to the mailto link
+    window.location.href = mailtoLink;
+
+    //reset form
+    document.getElementById('contactForm').reset();
+
+});
+
+	</script>
+
+</body>
+</html>
